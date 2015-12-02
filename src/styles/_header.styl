@@ -2,27 +2,29 @@
 //
 
 .siteHeader
-  position absolute
-  top .938rem
-  right 0
-  left 0
-  z-index 2
+	position absolute
+	top 0
+	right 0
+	left 0
+	z-index 2
+	padding .25rem 0
+	background-color white
 
 .siteLogo
-  max-width 53px
-  fill: $clr-primary
+	max-width 53px
+	fill: $clr-primary
 
 
 // Contrast mode
 //
 
 .siteHeader.contrast
-  .siteNavigation
-    .btn-link
-      color $nav-link-clr-contrast
+	.siteNavigation
+		.btn-link
+			color $nav-link-clr-contrast
 
-      +hover-state()
-        color $nav-link-hover-clr-contrast
+			+hover-state()
+				color $nav-link-hover-clr-contrast
 
-  .siteLogo
-    fill: $txt-clr-base-contrast
+	.siteLogo
+		fill: $txt-clr-base-contrast
